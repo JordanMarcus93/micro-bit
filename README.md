@@ -4,7 +4,7 @@ A modern, full-stack interactive code editor and snippet sharing platform.
 
 ## Overview
 
-CodeCraft combines a powerful code editor with community features, allowing developers to write, execute, and share code across multiple programming languages. Built with modern technologies and best practices, it provides a seamless development experience.
+MindCraft combines a powerful code editor with community features, allowing developers to write, execute, and share code across multiple programming languages. Built with modern technologies and best practices, it provides a seamless development experience.
 
 ## Features
 
