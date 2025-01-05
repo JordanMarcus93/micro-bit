@@ -38,8 +38,6 @@ export const getUser = query({
       .filter((q) => q.eq(q.field("userId"), args.userId))
       .first();
 
-    if (!user) return null;
-
     return user;
   },
 });
