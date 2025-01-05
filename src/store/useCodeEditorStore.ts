@@ -109,7 +109,7 @@ export const useCodeEditorStore = create<CodeEditorState>((set, get) => {
           return;
         }
 
-        // handle compilation errors
+        // handle errors for compiled languages ex: c++, rust
         if (data.compile && data.compile.code !== 0) {
           const error = data.compile.stderr || data.compile.output;
           set({
@@ -123,6 +123,7 @@ export const useCodeEditorStore = create<CodeEditorState>((set, get) => {
           return;
         }
 
+        // handle errors for interpreted languages ex: js, ts
         if (data.run && data.run.code !== 0) {
           const error = data.run.stderr || data.run.output;
           set({
