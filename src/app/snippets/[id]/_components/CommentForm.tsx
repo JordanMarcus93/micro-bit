@@ -54,7 +54,7 @@ function CommentForm({ isSubmitting, onSubmit }: CommentFormProps) {
 
         {/* Comment form body */}
         {isPreview ? (
-          <div className="min-h-[120px] p-4 text-[#e1e1e3">
+          <div className="min-h-[120px] p-4 text-[#e1e1e3]">
             <CommentContent content={comment} />
           </div>
         ) : (
