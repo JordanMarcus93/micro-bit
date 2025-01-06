@@ -31,7 +31,7 @@ interface ProfileHeaderProps {
     proSince?: number | undefined;
     lemonSqueezyCustomerId?: string | undefined;
     lemonSqueezyOrderId?: string | undefined;
-    name: string;
+    name?: string;
     userId: string;
     email: string;
     isPro: boolean;
