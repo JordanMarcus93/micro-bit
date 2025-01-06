@@ -21,9 +21,11 @@ export const saveExecution = mutation({
       .filter((q) => q.eq(q.field("userId"), identity.subject))
       .first();
 
-    if (!user?.isPro && args.language !== "javascript") {
-      throw new ConvexError("Pro subscription required to use this language");
-    }
+    // if (!user?.isPro && args.language !== "javascript") {
+    //   throw new ConvexError("Pro subscription required to use this language");
+    // }
+
+    if (!user) throw new ConvexError("User not in database");
 
     await ctx.db.insert("codeExecutions", {
       ...args,
